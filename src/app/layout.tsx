@@ -10,19 +10,19 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title:
-    'Pandem - Information you need during on-call emergencies',
+    'Arguelles Coaching',
   description:
-    'Quickly link new on-call tickets to similar past incidents and their solutions. All directly in Slack the moment an incident happens.',
-  openGraph: {
-    images: '/opengraph-image.png'
-  },
+    'Lorem ipsum dolor.',
+  // openGraph: {
+  //   images: '/opengraph-image.png'
+  // },
   twitter: {
     card: 'summary_large_image',
     title:
-      'Pandem - Information you need during on-call emergencies',
+      'Arguelles Coaching',
     description:
-      'Quickly link new on-call tickets to similar past incidents and their solutions. All directly in Slack the moment an incident happens.',
-    images: ['https://i.imgur.com/MPMcyPP.png']
+      'Lorem ipsum dolor.',
+    // images: ['https://i.imgur.com/MPMcyPP.png']
   }
 }
 
@@ -41,7 +41,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
@@ -50,7 +50,7 @@ export default function RootLayout({
           >
             <Header />
             <div className="flex flex-1 justify-center w-full">
-              <div className="flex w-full max-w-[1280px] h-full">
+              <div className="flex w-full  h-full">
                 {children}
               </div>
             </div>

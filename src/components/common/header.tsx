@@ -1,7 +1,6 @@
 'use client'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { usePathname } from 'next/navigation'
 import Typography from '@/components/ui/typography'
 import {
@@ -20,45 +19,24 @@ export function Header({ className }: SidebarProps) {
   const pathname = usePathname()
   const items = [
     {
-      href: 'https://map.sistilli.dev/public/coding/SaaS+Boilerplate',
-      title: 'Book a demo',
+      href: '#',
+      title: 'Agenda',
       openInNewTab: true
+    },
+    { href: '#', title: 'Preguntas frecuentes' },
+    {
+      href: '#',
+      title: 'Contacto'
     }
-    // { href: '#pricing', title: 'Features' },
-    // {
-    //   href: 'mailto:myemail@.com',
-    //   title: 'Contact Us'
-    // }
   ]
 
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
-      <img src="/logo.svg" className="mr-3" />
+      <img height={400} src="/logo.svg" className="mr-3" />
       <Typography className="!text-white !text-base font-medium ">
-        Pandem
+        Argüelles Coaching
       </Typography>
     </Link>
-  )
-
-  const getAuthButtons = () => (
-    <div className="flex gap-3 items-center">
-      <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
-      >
-        <Typography variant="p">Login</Typography>
-      </Link>
-      <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
-      >
-        <Button size="tiny" color="ghost">
-          <Typography variant="p" className="text-black">
-            Sign Up
-          </Typography>
-        </Button>
-      </Link>
-    </div>
   )
 
   const getHeaderItems = () => {
@@ -99,18 +77,17 @@ export function Header({ className }: SidebarProps) {
       <div className="w-full max-w-[1280px] md:px-8 px-4">
         {/* Desktop */}
         <div className="flex items-center gap-x-8 w-full">
-          <div className="md:flex-0 min-w-fit flex-1">
+        <div className="md:flex-0 min-w-fit flex-1">
             {getLogo()}
           </div>
           <div className="hidden md:flex flex items-center w-full">
-            <div className="flex items-center gap-x-8 flex-1">
+            <div className="flex items-center gap-x-8 flex-1"></div>
+            <div className="flex items-center gap-x-8">
               {getHeaderItems()}
             </div>
-            {getAuthButtons()}
           </div>
           {/* Mobile */}
           <div className="md:hidden flex gap-x-4 items-center">
-            {getAuthButtons()}
             <Drawer direction="right">
               <DrawerTrigger asChild>
                 <MenuIcon />
