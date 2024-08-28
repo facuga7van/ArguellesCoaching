@@ -13,7 +13,7 @@ export function Footer() {
           >
             <img src="/logo.svg" className="mr-3" />
             <Typography className="!text-white !text-base font-medium ">
-            Argüelles Coaching
+              Argüelles Coaching
             </Typography>
           </Link>
         </div>
@@ -32,9 +32,7 @@ export function Footer() {
             target="_blank"
             className="pointer block w-fit"
           >
-            <Typography variant="p">
-              Instagram
-            </Typography>
+            <Typography variant="p">Instagram</Typography>
           </Link>
         </div>
       </div>

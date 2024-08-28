@@ -77,7 +77,7 @@ export function Header({ className }: SidebarProps) {
       <div className="w-full max-w-[1280px] md:px-8 px-4">
         {/* Desktop */}
         <div className="flex items-center gap-x-8 w-full">
-        <div className="md:flex-0 min-w-fit flex-1">
+          <div className="md:flex-0 min-w-fit flex-1">
             {getLogo()}
           </div>
           <div className="hidden md:flex flex items-center w-full">

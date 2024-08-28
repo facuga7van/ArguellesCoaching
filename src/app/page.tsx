@@ -46,7 +46,7 @@ export default function Home() {
         />
       </div>
       <div className="flex flex-col md:pt-24 md:gap-36 gap-24 items-center">
-      <div className="flex flex-col gap-6 max-w-2xl items-center">
+        <div className="flex flex-col gap-6 max-w-2xl items-center">
           <Typography
             className="max-w-2xl mb-10"
             variant="h1"
@@ -104,7 +104,7 @@ export default function Home() {
             />
           </div>
         </div>
-        
+
         <div className="flex flex-col gap-6 max-w-2xl items-center">
           <Typography
             className="max-w-2xl mb-10"

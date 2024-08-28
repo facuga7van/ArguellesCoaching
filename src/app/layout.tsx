@@ -9,19 +9,15 @@ import { Analytics } from '@vercel/analytics/react'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title:
-    'Arguelles Coaching',
-  description:
-    'Lorem ipsum dolor.',
+  title: 'Arguelles Coaching',
+  description: 'Lorem ipsum dolor.',
   // openGraph: {
   //   images: '/opengraph-image.png'
   // },
   twitter: {
     card: 'summary_large_image',
-    title:
-      'Arguelles Coaching',
-    description:
-      'Lorem ipsum dolor.',
+    title: 'Arguelles Coaching',
+    description: 'Lorem ipsum dolor.'
     // images: ['https://i.imgur.com/MPMcyPP.png']
   }
 }
@@ -50,7 +46,7 @@ export default function RootLayout({
           >
             <Header />
             <div className="flex flex-1 justify-center w-full">
-              <div className="flex w-full  h-full">
+              <div className="flex w-full h-full">
                 {children}
               </div>
             </div>

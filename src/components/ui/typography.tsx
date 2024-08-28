@@ -14,7 +14,7 @@ export const typographyVariants = cva('text-xl', {
       h4: 'scroll-m-20 text-xl font-semibold tracking-tight',
       h5: 'scroll-m-18 text-lg tracking-tight text-minor',
       h6: 'scroll-m-18 text-md tracking-tight text-minor',
-      p:  'md:text-sm text-sm leading-7 text-minor',
+      p: 'md:text-sm text-sm leading-7 text-minor'
     },
     affects: {
       default: '',
