@@ -18,11 +18,11 @@ export default function Home() {
         <Typography className="max-w-2xl" variant="h5">
           Tu aliade en el camino hacia el crecimiento
           personal y profesional. Con un enfoque
-          personalizado y empático, te ayudamos a encontrar tus propias herramientas para
-           potenciar tus habilidades, superar obstáculos y
-          alcanzar tus objetivos. Así podrás transformar tu vida y
-          lograr un equilibrio que refleje tu verdadero
-          potencial.{' '}
+          personalizado y empático, te ayudamos a encontrar
+          tus propias herramientas para potenciar tus
+          habilidades, superar obstáculos y alcanzar tus
+          objetivos. Así podrás transformar tu vida y lograr
+          un equilibrio que refleje tu verdadero potencial.{' '}
         </Typography>
         <Link href="#Contacto">
           <Button size="lg" variant="perso">
