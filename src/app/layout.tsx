@@ -42,10 +42,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main
-            className={`flex min-h-screen flex-col ${inter.className}`}
+            className={`flex flex-col ${inter.className}`}
           >
             <Header />
-            <div className="flex flex-1 justify-center w-full">
+            <div className="flex flex-1 justify-center w-full spectrum-background">
               <div className="flex w-full h-full">
                 {children}
               </div>

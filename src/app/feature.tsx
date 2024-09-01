@@ -17,7 +17,7 @@ const Feature: React.FC<FeatureProps> = ({
       className="flex flex-col gap-6 text-left max-w-72 md:items-start
         items-center"
     >
-      <div className="py-4 px-4 rounded-md border max-w-fit">
+      <div className="py-4 px-4 rounded-md border border-[#88B04B]/40 bg-[#fcf8ff] max-w-fit">
         {icon}
       </div>
       <Typography variant="h3">{headline}</Typography>

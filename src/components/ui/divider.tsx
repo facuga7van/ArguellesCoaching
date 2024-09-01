@@ -16,8 +16,8 @@ const dividerVariants = cva('flex', {
     },
     size: {
       default: 'h-px',
-      sm: 'corinthia-regular pb-2 md:text-[100px] text-2xl tracking-tight first:mt-0 text-black',
-      lg: 'corinthia-regular pb-2 md:text-[100px] text-2xl tracking-tight first:mt-0 text-white'
+      sm: 'corinthia-regular pb-2 md:text-[80px] text-2xl tracking-tight first:mt-0 text-black',
+      lg: 'corinthia-regular pb-2 md:text-[80px] text-2xl tracking-tight first:mt-0 text-white'
     }
   },
   defaultVariants: {

@@ -4,17 +4,14 @@ import Typography from '@components/ui/typography'
 
 export function Footer() {
   return (
-    <footer className="flex h-12 items-center justify-center w-full border-t">
+    <footer className="flex py-2 items-center justify-center w-full border-t spectrum-background shadow-lg">
       <div className="w-full max-w-[1280px] md:px-8 px-4 flex place-content-center">
         <div className="gap-x-11 md:flex flex-1 hidden">
           <Link
             href="/"
             className="pointer flex items-center"
           >
-            <img src="/logo.svg" className="mr-3" />
-            <Typography className="!text-white !text-base font-medium ">
-              Argüelles Coaching
-            </Typography>
+            <img height={30} width={150} src="/logo.svg" className="mr-3" />
           </Link>
         </div>
         <div className="flex max-w-fit items-center gap-x-4">

@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import Typography from '@/components/ui/typography'
 import Feature from './feature'
-import { ArrowUpDown, Timer, Workflow } from 'lucide-react'
+import { Medal, HeartPulse, Handshake } from 'lucide-react'
 import Link from 'next/link'
 import { Divider } from '@/components/ui/divider'
 
@@ -9,40 +9,41 @@ export default function Home() {
   return (
     <div
       className="flex flex-col h-full md:py-20 pt-11 pb-24 w-full
-        items-center text-center gap-12"
+        items-center text-center gap-12 bg-color-1"
     >
       <div className="flex flex-col gap-6 items-center">
         <Typography className="max-w-2xl" variant="h1">
-          Argüelles Coaching
+          Coaching Paula Argüelles
         </Typography>
         <Typography className="max-w-2xl" variant="h5">
-          Tu aliado en el camino hacia el crecimiento
+          Tu aliade en el camino hacia el crecimiento
           personal y profesional. Con un enfoque
-          personalizado y empático, te ayudamos a descubrir
-          y potenciar tus habilidades, superar obstáculos y
-          alcanzar tus objetivos. Te brindamos las
-          herramientas necesarias para transformar tu vida y
+          personalizado y empático, te ayudamos a encontrar tus propias herramientas para
+           potenciar tus habilidades, superar obstáculos y
+          alcanzar tus objetivos. Así podrás transformar tu vida y
           lograr un equilibrio que refleje tu verdadero
           potencial.{' '}
         </Typography>
         <Link href="#Contacto">
-          <Button size="tiny" variant="outline">
+          <Button size="lg" variant="perso">
             {`Empecemos`}
           </Button>
         </Link>
-        <img
-          width={1024}
-          height={632}
-          alt="Coaching image"
-          src="/pic.jpeg"
-        />
+        <div className="p-2 border-4 border-[#88B04B]/40">
+          <img
+            width={1024}
+            height={632}
+            alt="Coaching image"
+            src="/pic.jpeg"
+          />
+        </div>
       </div>
       <div className="w-full h-[200px] divider-container">
         <Divider
           variant="primary"
           size="lg"
           image="pic2.jpg"
-          text="Cambia lo bueno, enfocate en la vida"
+          text="Tu potencial es infinito, atrevete a explorarlo"
         />
       </div>
       <div className="flex flex-col md:pt-24 md:gap-36 gap-24 items-center">
@@ -53,9 +54,19 @@ export default function Home() {
           >
             Un poco sobre mi
           </Typography>
-          <div className="flex flex-row gap-6 mx-auto items-center">
+          <div
+            className="flex flex-col sm:flex-row gap-6 mx-auto items-center p-5
+              border-4 border-[#88B04B]/40"
+          >
+            <img
+              className="sm:w-1/2 "
+              alt="Paula image"
+              width={400}
+              height={832}
+              src="/paula.jpg"
+            />
             <Typography
-              className="max-w-2xl mr-5 text-left"
+              className=" sm:ml-5 text-left"
               variant="h6"
             >
               Soy Paula Valeria Argüelles, bailarina
@@ -73,12 +84,6 @@ export default function Home() {
               a otros a alcanzar su máximo potencial, tanto
               en su vida personal como profesional.
             </Typography>
-            <img
-              width={300}
-              height={632}
-              alt="Paula image"
-              src="/paula.jpg"
-            />
           </div>
         </div>
 
@@ -88,23 +93,57 @@ export default function Home() {
           </Typography>
           <div className="flex md:flex-row flex-col gap-12">
             <Feature
-              icon={<Timer size={24} />}
+              icon={<Medal size={24} />}
               headline="Coaching Deportivo"
               description="Diseñado para atletas y equipos, este coaching se centra en mejorar el rendimiento mental y emocional en el deporte, ayudándote a alcanzar tus máximos niveles de desempeño."
             />
             <Feature
-              icon={<ArrowUpDown size={24} />}
+              icon={<HeartPulse size={24} />}
               headline="Coaching Ontologico"
               description="Enfocado en el desarrollo personal y la transformación, este tipo de coaching te ayuda a replantear la forma en que ves el mundo y te comunicas, facilitando cambios profundos en tu vida."
             />
             <Feature
-              icon={<Workflow size={24} />}
+              icon={<Handshake size={24} />}
               headline="Coaching Empresarial"
               description="Orientado a líderes y equipos dentro del entorno corporativo, este coaching busca optimizar la toma de decisiones, mejorar la comunicación y fomentar un ambiente de trabajo productivo y colaborativo."
             />
           </div>
         </div>
 
+        <div className="flex flex-col gap-6 max-w-2xl items-center">
+          <Typography
+            className="max-w-2xl mb-10"
+            variant="h1"
+          >
+            ¿Qué es el coaching?
+          </Typography>
+          <Typography
+            className="max-w-2xl text-left"
+            variant="h6"
+          >
+            Coach es el arte de identificar y cuestionar los
+            cambios que querés realizar para ser quien
+            realmente querés ser.
+          </Typography>
+          <Typography
+            className="max-w-2xl text-left"
+            variant="h6"
+          >
+            Es un proceso que te ayuda a alinear tus
+            acciones con tus metas y valores, optimizando tu
+            potencial y mejorando tu desempeño en distintas
+            áreas de tu vida.
+          </Typography>
+          <Typography
+            className="max-w-2xl text-left"
+            variant="h6"
+          >
+            El coaching no solo te guía a alcanzar tus
+            objetivos, sino que también te permite descubrir
+            y aprovechar tus fortalezas, gestionando de
+            manera consciente los desafíos que enfrentes.
+          </Typography>
+        </div>
         <div className="flex flex-col gap-6 max-w-2xl items-center">
           <Typography
             className="max-w-2xl mb-10"
@@ -146,9 +185,38 @@ export default function Home() {
           variant="primary"
           size="lg"
           image="pic.jpeg"
-          text="Cambia tu vida, enfocate lo bueno"
+          text="Conviertete en el cambio que deseas ver en el mundo"
         />
       </div>
+      <div className="flex flex-col gap-6 items-center">
+        <Typography
+          className="max-w-2xl mb-10 text-center"
+          variant="h1"
+        >
+          Certificaciones
+        </Typography>
+        <div
+          className="flex flex-col sm:flex-row justify-between space-y-5
+            sm:space-y-0 sm:space-x-5"
+        >
+          <img
+            className="w-full sm:w-1/3 h-auto max-w-[30rem]"
+            alt="Certification image"
+            src="/cert1.jpg"
+          />
+          <img
+            className="w-full sm:w-1/3 h-auto max-w-[30rem]"
+            alt="Certification image"
+            src="/cert2.jpg"
+          />
+          <img
+            className="w-full sm:w-1/3 h-auto max-w-[30rem]"
+            alt="Certification image"
+            src="/cert3.jpg"
+          />
+        </div>
+      </div>
+
       <div
         id="Contacto"
         className="flex flex-col gap-6 items-center"
@@ -163,7 +231,7 @@ export default function Home() {
           href="https://wa.me/5491131550341"
           target="_blank"
         >
-          <Button size="tiny" variant="outline">
+          <Button size="lg" variant="perso">
             {`Agendar`}
           </Button>
         </Link>

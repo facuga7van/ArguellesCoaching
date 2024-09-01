@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -32,10 +32,7 @@ export function Header({ className }: SidebarProps) {
 
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
-      <img height={400} src="/logo.svg" className="mr-3" />
-      <Typography className="!text-white !text-base font-medium ">
-        Argüelles Coaching
-      </Typography>
+      <img height={30} width={150} src="/logo.svg" className="mr-3" />
     </Link>
   )
 
@@ -49,7 +46,10 @@ export function Header({ className }: SidebarProps) {
           return (
             <Link
               href={item.href}
-              className="pointer block w-fit"
+              className={cn(
+                'py-1 pointer block w-fit bg-left-bottom bg-gradient-to-r from-transparent to-transparent bg-[length:0%_3px] bg-no-repeat hover:bg-[length:100%_3px] hover:from-[#88B04B] hover:to-[#88B04B] transition-all duration-500 ease-out',
+                selected && 'text-primary'
+              )}
               target={item.openInNewTab ? '_blank' : ''}
               key={item.title}
             >
@@ -68,9 +68,10 @@ export function Header({ className }: SidebarProps) {
 
   return (
     <div
+      style={{ filter: "drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2))" }}
       className={cn(
-        `flex md:h-12 h-14 items-center justify-center w-full
-          border-b`,
+        `flex py-2 items-center justify-center w-full
+          border-b shadow-[0_6px_20px_-15px_rgba(0,0,0,0.2)]`,
         className
       )}
     >
@@ -87,7 +88,7 @@ export function Header({ className }: SidebarProps) {
             </div>
           </div>
           {/* Mobile */}
-          <div className="md:hidden flex gap-x-4 items-center">
+          <div className="group md:hidden flex gap-x-4 items-center">
             <Drawer direction="right">
               <DrawerTrigger asChild>
                 <MenuIcon />
@@ -101,7 +102,7 @@ export function Header({ className }: SidebarProps) {
                       </div>
                     </DrawerClose>
                   </DrawerHeader>
-                  <div className="p-4 pb-0 space-y-4">
+                  <div className="space-y-4">
                     {getHeaderItems()}
                   </div>
                 </div>
