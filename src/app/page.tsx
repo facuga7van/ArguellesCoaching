@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import Typography from '@/components/ui/typography'
-import Feature from './feature'
-import { Medal, HeartPulse, Handshake } from 'lucide-react'
+// import Feature from './feature'
+// import { Medal, HeartPulse, Handshake } from 'lucide-react'
 import Link from 'next/link'
 import { Divider } from '@/components/ui/divider'
 
@@ -13,7 +13,7 @@ export default function Home() {
     >
       <div className="flex flex-col gap-6 items-center">
         <Typography className="max-w-2xl" variant="h1">
-          Coaching Paula Argüelles
+          Paula Argüelles Coaching
         </Typography>
         <Typography className="max-w-2xl" variant="h5">
           Tu compañero en el camino hacia el crecimiento
