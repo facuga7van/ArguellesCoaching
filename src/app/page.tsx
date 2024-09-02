@@ -59,7 +59,7 @@ export default function Home() {
               src="paula.jpg"
             />
             <Typography
-              className=" sm:ml-5  text-left"
+              className=" sm:ml-5 text-left"
               variant="h6"
             >
               Soy Paula Valeria Argüelles, bailarina
