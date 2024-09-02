@@ -11,7 +11,7 @@ export default function Home() {
       className="flex flex-col h-full md:py-20 pt-11 pb-24 w-full
         items-center text-center gap-12 bg-color-1"
     >
-      <div className="flex flex-col gap-6 items-center">
+      <div className="flex flex-col mx-5 gap-6 items-center">
         <Typography className="max-w-2xl" variant="h1">
           Paula Argüelles Coaching
         </Typography>
@@ -40,7 +40,7 @@ export default function Home() {
             src="pic.jpeg"
           />
         </div> */}
-        <div className="flex flex-col gap-6 max-w-2xl items-center">
+        <div className="flex flex-col gap-6 max-w-2xl items-center ">
           <Typography
             className="max-w-2xl mb-10"
             variant="h1"
@@ -48,7 +48,7 @@ export default function Home() {
             Un poco sobre mi
           </Typography>
           <div
-            className="flex flex-col sm:flex-row gap-6 mx-auto items-center p-5
+            className="flex flex-col sm:flex-row gap-6 md:mx-auto items-center p-5
               border-4 border-[#88B04B]/40"
           >
             <img
@@ -59,7 +59,7 @@ export default function Home() {
               src="paula.jpg"
             />
             <Typography
-              className=" sm:ml-5 text-left"
+              className=" sm:ml-5  text-left"
               variant="h6"
             >
               Soy Paula Valeria Argüelles, bailarina
@@ -112,7 +112,7 @@ export default function Home() {
           </div>
         </div> */}
 
-        <div className="flex flex-col gap-6 max-w-2xl items-center">
+        <div className="flex flex-col mx-5 gap-6 max-w-2xl items-center">
           <Typography
             className="max-w-2xl mb-10"
             variant="h1"
@@ -146,7 +146,7 @@ export default function Home() {
             manera consciente los desafíos que enfrentes.
           </Typography>
         </div>
-        <div className="flex flex-col gap-6 max-w-2xl items-center">
+        <div className="flex flex-col mx-5 gap-6 max-w-2xl items-center">
           <Typography
             className="max-w-2xl mb-10"
             variant="h1"
@@ -218,7 +218,7 @@ export default function Home() {
           text="Conviertete en el cambio que deseas ver en el mundo"
         />
       </div>
-      <div className="flex flex-col gap-6 max-w-2xl items-center">
+      <div className="flex flex-col mx-5 gap-6 max-w-2xl items-center">
         <Typography
           className="max-w-2xl mb-10"
           variant="h1"
