@@ -24,7 +24,7 @@ export function Footer() {
         </div>
         <div className="flex max-w-fit items-center gap-x-4">
           <Link
-            href="#"
+            href="https://calendly.com/arguellespaula/sesion-gratis"
             target="_blank"
             className="pointer block w-fit flex-1"
           >

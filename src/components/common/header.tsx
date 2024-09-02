@@ -19,13 +19,13 @@ export function Header({ className }: SidebarProps) {
   const pathname = usePathname()
   const items = [
     {
-      href: '#',
+      href: 'https://calendly.com/arguellespaula/sesion-gratis',
       title: 'Agenda',
       openInNewTab: true
     },
     { href: '#', title: 'Preguntas frecuentes' },
     {
-      href: '#',
+      href: '#Contacto',
       title: 'Contacto'
     }
   ]

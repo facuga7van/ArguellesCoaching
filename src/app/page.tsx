@@ -16,37 +16,30 @@ export default function Home() {
           Coaching Paula Argüelles
         </Typography>
         <Typography className="max-w-2xl" variant="h5">
-          Tu aliade en el camino hacia el crecimiento
+          Tu compañero en el camino hacia el crecimiento
           personal y profesional. Con un enfoque
           personalizado y empático, te ayudamos a encontrar
           tus propias herramientas para potenciar tus
           habilidades, superar obstáculos y alcanzar tus
           objetivos. Así podrás transformar tu vida y lograr
-          un equilibrio que refleje tu verdadero potencial.{' '}
+          un equilibrio que refleje tu verdadero potencial.
         </Typography>
-        <Link href="#Contacto">
+        <Link
+          href="https://calendly.com/arguellespaula/sesion-gratis"
+          target="_blank"
+        >
           <Button size="lg" variant="perso">
             {`Empecemos`}
           </Button>
         </Link>
-        <div className="p-2 border-4 border-[#88B04B]/40">
+        {/* <div className="p-2 border-4 border-[#88B04B]/40">
           <img
             width={1024}
             height={632}
             alt="Coaching image"
             src="/pic.jpeg"
           />
-        </div>
-      </div>
-      <div className="w-full h-[200px] divider-container">
-        <Divider
-          variant="primary"
-          size="lg"
-          image="pic2.jpg"
-          text="Tu potencial es infinito, atrevete a explorarlo"
-        />
-      </div>
-      <div className="flex flex-col md:pt-24 md:gap-36 gap-24 items-center">
+        </div> */}
         <div className="flex flex-col gap-6 max-w-2xl items-center">
           <Typography
             className="max-w-2xl mb-10"
@@ -86,8 +79,17 @@ export default function Home() {
             </Typography>
           </div>
         </div>
-
-        <div className="flex flex-col gap-12 items-center">
+      </div>
+      <div className="w-full h-[200px] divider-container">
+        <Divider
+          variant="primary"
+          size="lg"
+          image="pic2.jpg"
+          text="Tu potencial es infinito, atrevete a explorarlo"
+        />
+      </div>
+      <div className="flex flex-col md:pt-24 md:gap-36 gap-24 items-center">
+        {/* <div className="flex flex-col gap-12 items-center">
           <Typography className="max-w-2xl" variant="h1">
             Ofrecemos
           </Typography>
@@ -108,7 +110,7 @@ export default function Home() {
               description="Orientado a líderes y equipos dentro del entorno corporativo, este coaching busca optimizar la toma de decisiones, mejorar la comunicación y fomentar un ambiente de trabajo productivo y colaborativo."
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="flex flex-col gap-6 max-w-2xl items-center">
           <Typography
@@ -149,35 +151,63 @@ export default function Home() {
             className="max-w-2xl mb-10"
             variant="h1"
           >
-            Modalidad Remota
+            Como empezamos
           </Typography>
           <Typography
             className="max-w-2xl text-left"
             variant="h6"
           >
-            En un mundo cada vez más interconectado, he
-            adoptado la modalidad remota para ofrecer mis
-            servicios de coaching de manera flexible y
-            accesible. Esta modalidad me permite llegar a
-            personas de diferentes lugares, sin importar la
-            distancia, y adaptar las sesiones a tus
-            necesidades y horarios.
+            Primero, agendamos una cita inicial de
+            aproximadamente 30 minutos, donde tendremos la
+            oportunidad de conocernos mejor. En esta primera
+            sesión, me contarás sobre aquello en lo que te
+            gustaría trabajar y cuál es el objetivo que
+            deseas alcanzar.
           </Typography>
           <Typography
             className="max-w-2xl text-left"
             variant="h6"
           >
-            El coaching remoto te brinda la comodidad de
-            acceder a las sesiones desde cualquier lugar,
-            sin desplazamientos, permitiéndote enfocarte
-            plenamente en tu crecimiento personal o
-            profesional. A través de plataformas seguras y
-            confiables, garantizo una experiencia
-            personalizada y efectiva, tal como si
-            estuviéramos en la misma sala. Mi compromiso es
-            ofrecerte un acompañamiento cercano y de
-            calidad, sin importar dónde te encuentres.{' '}
+            A partir de ahí, comenzaremos un proceso
+            personalizado con sesiones regulares de
+            aproximadamente 1 hora cada una. Durante estas
+            sesiones, exploraremos y desarrollaremos las
+            herramientas y habilidades necesarias para tu
+            evolución personal y la realización de tus
+            metas. Mi objetivo es acompañarte en cada paso
+            de este camino, asegurando que te sientas
+            apoyado y guiado hacia el logro de tus
+            objetivos.
           </Typography>
+        </div>
+
+        <div className="flex flex-col gap-6 items-center">
+          <Typography
+            className="max-w-2xl mb-10 text-center"
+            variant="h1"
+          >
+            Certificaciones
+          </Typography>
+          <div
+            className="flex flex-col sm:flex-row justify-between space-y-5
+              sm:space-y-0 sm:space-x-5"
+          >
+            <img
+              className="w-full sm:w-1/3 h-auto max-w-[30rem]"
+              alt="Certification image"
+              src="/cert1.jpg"
+            />
+            <img
+              className="w-full sm:w-1/3 h-auto max-w-[30rem]"
+              alt="Certification image"
+              src="/cert2.jpg"
+            />
+            <img
+              className="w-full sm:w-1/3 h-auto max-w-[30rem]"
+              alt="Certification image"
+              src="/cert3.jpg"
+            />
+          </div>
         </div>
       </div>
       <div className="w-full h-[200px] divider-container">
@@ -188,33 +218,40 @@ export default function Home() {
           text="Conviertete en el cambio que deseas ver en el mundo"
         />
       </div>
-      <div className="flex flex-col gap-6 items-center">
+      <div className="flex flex-col gap-6 max-w-2xl items-center">
         <Typography
-          className="max-w-2xl mb-10 text-center"
+          className="max-w-2xl mb-10"
           variant="h1"
         >
-          Certificaciones
+          Modalidad Remota
         </Typography>
-        <div
-          className="flex flex-col sm:flex-row justify-between space-y-5
-            sm:space-y-0 sm:space-x-5"
+        <Typography
+          className="max-w-2xl text-left"
+          variant="h6"
         >
-          <img
-            className="w-full sm:w-1/3 h-auto max-w-[30rem]"
-            alt="Certification image"
-            src="/cert1.jpg"
-          />
-          <img
-            className="w-full sm:w-1/3 h-auto max-w-[30rem]"
-            alt="Certification image"
-            src="/cert2.jpg"
-          />
-          <img
-            className="w-full sm:w-1/3 h-auto max-w-[30rem]"
-            alt="Certification image"
-            src="/cert3.jpg"
-          />
-        </div>
+          En un mundo cada vez más interconectado, he
+          adoptado la modalidad remota para ofrecer mis
+          servicios de coaching de manera flexible y
+          accesible. Esta modalidad me permite llegar a
+          personas de diferentes lugares, sin importar la
+          distancia, y adaptar las sesiones a tus
+          necesidades y horarios.
+        </Typography>
+        <Typography
+          className="max-w-2xl text-left"
+          variant="h6"
+        >
+          El coaching remoto te brinda la comodidad de
+          acceder a las sesiones desde cualquier lugar, sin
+          desplazamientos, permitiéndote enfocarte
+          plenamente en tu crecimiento personal o
+          profesional. A través de plataformas seguras y
+          confiables, garantizo una experiencia
+          personalizada y efectiva, tal como si estuviéramos
+          en la misma sala. Mi compromiso es ofrecerte un
+          acompañamiento cercano y de calidad, sin importar
+          dónde te encuentres.{' '}
+        </Typography>
       </div>
 
       <div
@@ -224,17 +261,41 @@ export default function Home() {
         <Typography className="max-w-2xl" variant="h1">
           Contacto
         </Typography>
+        <div>¡Nuestra primera sesión es gratis!</div>
         <div>
-          Por cualquier consulta no dudes en hablarme!
+          <Link
+            href="https://calendly.com/arguellespaula/sesion-gratis"
+            target="_blank"
+          >
+            <Button size="lg" variant="perso">
+              {`Agendar`}
+            </Button>
+          </Link>
         </div>
-        <Link
-          href="https://wa.me/5491131550341"
-          target="_blank"
-        >
-          <Button size="lg" variant="perso">
-            {`Agendar`}
-          </Button>
-        </Link>
+        <div className="w-full flex flex-row gap-7">
+          <Link
+            href="https://wa.me/5491131550341"
+            target="_blank"
+          >
+            <Typography
+              className="max-w-2xl hover:text-blue-500"
+              variant="h5"
+            >
+              +54 9 11 3155-0341
+            </Typography>
+          </Link>
+          <Link
+            href="mailto:arguellespaula@gmail.com"
+            target="_blank"
+          >
+            <Typography
+              className="max-w-2xl hover:text-blue-500"
+              variant="h5"
+            >
+              arguellespaula@gmail.com
+            </Typography>
+          </Link>
+        </div>
       </div>
     </div>
   )
