@@ -11,13 +11,13 @@ export function Footer() {
       <div className="w-full max-w-[1280px] md:px-8 px-4 flex place-content-center">
         <div className="gap-x-11 md:flex flex-1 hidden">
           <Link
-            href="/"
+            href="#"
             className="pointer flex items-center"
           >
             <img
               height={30}
               width={150}
-              src="/logo.svg"
+              src="logo.svg"
               className="mr-3"
             />
           </Link>

@@ -37,7 +37,7 @@ export default function Home() {
             width={1024}
             height={632}
             alt="Coaching image"
-            src="/pic.jpeg"
+            src="pic.jpeg"
           />
         </div> */}
         <div className="flex flex-col gap-6 max-w-2xl items-center">
@@ -56,7 +56,7 @@ export default function Home() {
               alt="Paula image"
               width={400}
               height={832}
-              src="/paula.jpg"
+              src="paula.jpg"
             />
             <Typography
               className=" sm:ml-5 text-left"
@@ -195,17 +195,17 @@ export default function Home() {
             <img
               className="w-full sm:w-1/3 h-auto max-w-[30rem]"
               alt="Certification image"
-              src="/cert1.jpg"
+              src="cert1.jpg"
             />
             <img
               className="w-full sm:w-1/3 h-auto max-w-[30rem]"
               alt="Certification image"
-              src="/cert2.jpg"
+              src="cert2.jpg"
             />
             <img
               className="w-full sm:w-1/3 h-auto max-w-[30rem]"
               alt="Certification image"
-              src="/cert3.jpg"
+              src="cert3.jpg"
             />
           </div>
         </div>

@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
+  output: 'export',
+    basePath: '/ArguellesCoaching', // comentar para dev
+    assetPrefix: '/ArguellesCoaching/', // comentar para dev
   experimental: {
     missingSuspenseWithCSRBailout: false
   },
