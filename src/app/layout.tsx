@@ -9,15 +9,15 @@ import { Analytics } from '@vercel/analytics/react'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Arguelles Coaching',
-  description: 'Lorem ipsum dolor.',
+  title: 'Paula Argüelles Coaching',
+  description: 'Acompañamiento y herramientas personalizadas para el crecimiento personal y profesional.',
   // openGraph: {
   //   images: '/opengraph-image.png'
   // },
   twitter: {
     card: 'summary_large_image',
-    title: 'Arguelles Coaching',
-    description: 'Lorem ipsum dolor.'
+    title: 'Paula Argüelles Coaching',
+    description: 'Acompañamiento y herramientas personalizadas para el crecimiento personal y profesional.',
     // images: ['https://i.imgur.com/MPMcyPP.png']
   }
 }
